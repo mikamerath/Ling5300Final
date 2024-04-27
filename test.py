@@ -6,3 +6,5 @@ print(helpers.get_n_most_common_words(3))
 print("The word frequency of the: " + str(helpers.get_word_frequency("the")))
 print("The most common bigrams are: " + str(helpers.get_n_most_common_bigrams(3)))
 print("Getting bigram frequency of the word: " + str(helpers.get_bigram_frequency("the", "word")))
+
+helpers.add_pass_phrase_to_player(1)
