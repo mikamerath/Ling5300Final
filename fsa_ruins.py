@@ -20,7 +20,7 @@ def begin():
     if re.match(r"[\w\s]*(?:[Ii]nvestigate|[Ll]ook around|[Ss]earch|[Dd]elve|[Ee]xamine|[Ee]xplore|[Ii]nspect)[\w\s]*", response):
         result = puzzle()
         return result
-    elif re.match(r"[\w\s]*(?:[Ll]eave|[Rr]eturn|[Ss]antosan|[Gg]ive up)[\w\s]*"):
+    elif re.match(r"[\w\s]*(?:[Ll]eave|[Rr]eturn|[Ss]antosan|[Gg]ive up|[Ee]xit)[\w\s]*", response):
         slow_print("Unsure of what to do, you head back to the village of Santosan")
         return False
 
@@ -37,7 +37,7 @@ def puzzle():
             if re.match(puzzles[i], response):
                 slow_print("Console: Correct! Well done!")
                 break
-            elif re.match(r"[\w\s]*([Gg]ive up|[Ll]eave|[Ss]mash|[Qq]uit)[\w\s]*", response):
+            elif re.match(r"[\w\s]*([Gg]ive up|[Ll]eave|[Ss]mash|[Qq]uit|[Ee]xit)[\w\s]*", response):
                 response = response.replace("I ", "")
                 slow_print("Frustrated, you " + response + " and decide to return to Santosan")
                 return False

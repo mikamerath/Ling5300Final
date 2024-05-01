@@ -53,7 +53,10 @@ def tokenize(text):
 
 
 def add_player_string_to_counts(text):
+    text = text.lower()
     tokenized = tokenize(text)
+    if len(tokenized) == 0:
+        return
 
     for i in range(len(tokenized) - 1):
         player_bigram_counts[(tokenized[i].lower(), tokenized[i+1].lower())] += 1
@@ -68,6 +71,9 @@ def get_player_word_count():
 def get_n_most_common_words(n):
     return player_word_counts.most_common(n)
 
+
+def get_player_bigram_counts():
+    return player_bigram_counts.total()
 
 def get_n_most_common_bigrams(n):
     return player_bigram_counts.most_common(n)
