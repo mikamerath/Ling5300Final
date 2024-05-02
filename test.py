@@ -17,8 +17,10 @@ print("The following sentences should return true:")
 print(cky.is_sentence("a person walked up the hill"))
 print(cky.is_sentence("the person walked on the person"))
 print(cky.is_sentence("a hill up a thing up the woman saw in a woman"))
+print(cky.is_sentence("the woman ate the man on the hill"))
 
 # Not sentences in the grammar
 print("The following sentences should return false:")
 print(cky.is_sentence("the person saw the man on the hill on the thing walked a hill up a thing up the woman saw in a woman"))
 print(cky.is_sentence("the person saw the man on the hill on the thing walked a hill up a thing up the woman a saw in a woman"))
+print(cky.is_sentence("the person saw the man saw the woman"))

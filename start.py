@@ -23,16 +23,15 @@ def welcome():
     slow_print(helpers.player_name + ", you begin your journey in the village of Santosan, a small town" +
                "\nnestled in between several distinct landmarks. The Grammar Mountains are to the North," +
                "\nthe FSA Ruins to the East, and the Forest of Connection to the South. As you wake" +
-               "\nup this Summer morning, you are greeted with a letter from the Village Elder." +
-               "\nShe asks that you to meet her at her dwelling as soon as you are able.")
+               "\nup this Summer morning, you are greeted with a letter from the village elder." +
+               "\nShe asks that you to meet her at her dwelling as soon as you are able.\n\n")
 
 def village_loop():
-    # fsa_ruins.begin()
-    # bigrams.begin()
-    # grammar_mountains.begin()
     while True:
         result = False
-        response = get_player_response("You are now in the Village of Santosan. Where would you like to go?")
+        response = get_player_response("You are now in the Village of Santosan. Where would you like to go?" +
+                                       "\n(Grammar Mountains to the North, FSA Ruins to the East, " + 
+                                       "\nForest of Connetcion to the South, or the house of the village elder)")
         if re.match(r"[\w\s]*(?:[Nn]orth|[Gg]rammar|[Mm]ountain)[\w\s]*", response):
             slow_print("You head North towards the Grammar Mountains.")
             grammar_mountains.begin()

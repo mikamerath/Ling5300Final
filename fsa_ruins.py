@@ -5,7 +5,7 @@ from helpers import slow_print, get_player_response
 
 # Stephen Kleene and Ken Thompson
 
-puzzles = [r"[Ww]hy[\w\s]+\?$", r"[Ww]hat[\w\s]+ you are doing here\?$", r"^[Tt]he[\w\s]+\bis [0-9]+$", r"[\w\s]+ \$(?:[0-9]{3},)+[0-9]{3}\.[0-9]{2}$", r"^[Ii]{3}[\w\s]+[qvr].*[xyz][\w\s]+\w*m$"]
+puzzles = [r"[Ww]hy[\w\s]+\?$", r"[Ww]hat[\w\s]+ you are doing here\?$", r"^[Tt]he[\w\s]+\bis [0-9]+$", r"[\w\s]+ \$(?:[0-9]{3},)*[0-9]{3}\.[0-9]{2}$", r"^[Ii]{3}[\w\s]+[qvr].*[xyz][\w\s]+\w*m$"]
 PASS_PHRASE_NUM = 1
 
 def begin():
@@ -26,7 +26,7 @@ def begin():
             slow_print("Unsure of what to do, you head back to the village of Santosan")
             return False
         else:
-            slow_print("Confused, you " + response)
+            slow_print("Confused, you wander around the base of the trail")
             response = slow_print("After some time, you stop, the trail to the top of the mountain" + 
                                            "\nstill in your sights.")
 

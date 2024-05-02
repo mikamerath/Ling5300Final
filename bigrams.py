@@ -1,4 +1,3 @@
-import nltk
 import re
 
 from helpers import get_player_response, slow_print

@@ -37,6 +37,11 @@ def cky_parse(sentence):
                     if result[i][k] == B and result[k][j] == C:
                         result[i][j] = re.match(r"^(.*?) ->", rule).group(1)
 
+    # print("\n" + sentence + "\n")
+
+    # print('\n'.join([''.join(['{:5}'.format(item) for item in row]) 
+    #   for row in result]))
+    # print("\n\n")
     return result
 
 def is_sentence(sentence):

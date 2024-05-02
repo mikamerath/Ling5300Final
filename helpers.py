@@ -9,9 +9,9 @@ text_speed_name = "medium"
 text_speed = 0.05
 
 # First quote is Claude Shannon, second is Stephen Kleene, third is Noam Chomsky
-pass_phrases = ["In order to understand the world, we must first understand how information is transmitted and received",
+pass_phrases = ["Information is the resolution of uncertainty.",
                 "An algorithm is a finite answer to an infinite number of questions.",
-                "We shouldn't be looking for heroes, we should be looking for good ideas"]
+                "We shouldn't be looking for heroes, we should be looking for good ideas."]
 locations = ["Woods of Connection", "Finite State Automata Ruins", "Grammar Mountains"]
 results = [False, False, False]
 
