@@ -5,5 +5,7 @@ CKY algorithm psuedocode came from [Here](https://www.inf.ed.ac.uk/teaching/cour
 
 ### Quotes Used
 "Information is the resolution of uncertainty." -Claude Shannon
+
 "An algorithm is a finite answer to an infinite number of questions." -Stephen Kleene
+
 "We shouldn't be looking for heroes, we should be looking for good ideas." -Noam Chomsky
