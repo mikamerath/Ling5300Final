@@ -90,11 +90,21 @@ def get_bigram_frequency(word1, word2):
 def get_player_response(text=""):
     slow_print(text)
     response = input("\n" + player_name + ": ")
+    print("")
     add_player_string_to_counts(response)
 
     return response
 
 
 def add_pass_phrase_to_player(num):
-    global pass_phrases
+    global known_phrases
+    global results
     known_phrases.append(pass_phrases[num])
+    results[num] = True
+
+
+def get_finished():
+    for result in results:
+        if not result:
+            return False        
+    return True
